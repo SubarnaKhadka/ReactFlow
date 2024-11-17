@@ -1,0 +1,5 @@
+{
+  "ignore": ["**/build/**", "**/server/**", "**/node_modules/**"],
+  "presets": [["@babel/preset-react", { "runtime": "automatic" }]],
+  "plugins": ["@babel/transform-modules-commonjs"]
+}

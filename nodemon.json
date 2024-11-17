@@ -1,0 +1,6 @@
+{
+  "exec": "node --conditions react-server server/server.js",
+  "watch": ["server"],
+  "quiet": true,
+  "ext": "js,json"
+}

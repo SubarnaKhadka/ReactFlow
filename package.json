@@ -1,0 +1,27 @@
+{
+  "name": "reactflow",
+  "version": "1.0.0",
+  "description": "nextjs clone with ssr, server components and streaming",
+  "main": "server/server.js",
+  "author": "subarna khadka",
+  "license": "ISC",
+  "scripts": {
+    "build": "node scripts/build.client.js && node scripts/build.page.js",
+    "start": "node --conditions react-server server/server.js",
+    "dev": "node scripts/build.client.js && npx nodemon",
+    "build:page": "node scripts/build.page.js"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/register": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "express": "^4.18.2",
+    "react-server-dom-webpack": "18.3.0-next-1308e49a6-20230330",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "webpack-cli": "^5.1.4"
+  }
+}
